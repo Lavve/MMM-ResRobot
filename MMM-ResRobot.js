@@ -107,7 +107,7 @@
             var duration = moment.duration(endTime.diff(startTime));
             var hours = parseInt(duration.asHours());
             var minutes = parseInt(duration.asMinutes())%60;
-            var dep = hours + ':' + minutes;
+            var dep = hours.toString().padStart(2, '0') + ':' + minutes.toString().padStart(2, '0');
 
             var row = document.createElement("tr");
             table.appendChild(row);
