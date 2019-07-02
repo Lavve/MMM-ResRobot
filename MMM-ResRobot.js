@@ -103,27 +103,27 @@ Module.register("MMM-ResRobot",{
 			depTimeCell.innerHTML = departure.departuretime;
 			row.appendChild(depTimeCell);
 
-			var depTypeCell = document.createElement("td");
-			depTypeCell.className = "linetype";
-			var typeSymbol = document.createElement("span");
-			typeSymbol.className = this.config.iconTable[departure.type.substring(0,1)];
-			depTypeCell.appendChild(typeSymbol);
-			row.appendChild(depTypeCell);
+			// var depTypeCell = document.createElement("td");
+			// depTypeCell.className = "linetype";
+			// var typeSymbol = document.createElement("span");
+			// typeSymbol.className = this.config.iconTable[departure.type.substring(0,1)];
+			// depTypeCell.appendChild(typeSymbol);
+			// row.appendChild(depTypeCell);
 
 			var depLineCell = document.createElement("td");
 			depLineCell.className = "lineno";
 			depLineCell.innerHTML = departure.line;
 			row.appendChild(depLineCell);
 
-			var depLineCell = document.createElement("td");
-			depLineCell.className = "trackno";
-			depLineCell.innerHTML = departure.track;
-			row.appendChild(depLineCell);
+			// var depLineCell = document.createElement("td");
+			// depLineCell.className = "trackno";
+			// depLineCell.innerHTML = departure.track;
+			// row.appendChild(depLineCell);
 
-			var depToCell = document.createElement("td");
-			depToCell.className = "to";
-			depToCell.innerHTML = departure.to;
-			row.appendChild(depToCell);
+			// var depToCell = document.createElement("td");
+			// depToCell.className = "to";
+			// depToCell.innerHTML = departure.to;
+			// row.appendChild(depToCell);
 
 			if (this.config.fade && this.config.fadePoint < 1) {
 				if (this.config.fadePoint < 0) {
