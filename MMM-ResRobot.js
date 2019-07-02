@@ -102,6 +102,13 @@
             }
             n++;
 
+            var startTime = moment(new Date());
+            var endTime = moment(departure.departuretime, "HH:mm");
+            var duration = moment.duration(endTime.diff(startTime));
+            var hours = parseInt(duration.asHours());
+            var minutes = parseInt(duration.asMinutes())%60;
+            var dep = hours + ':' + minutes;
+
             var row = document.createElement("tr");
             table.appendChild(row);
 
@@ -119,20 +126,25 @@
 
             var depTimeCell = document.createElement("td");
             depTimeCell.className = "departuretime";
+            depTimeCell.innerHTML = dep;
+            row.appendChild(depTimeCell);
+
+            var depTimeCell = document.createElement("td");
+            depTimeCell.className = "departuretime";
             depTimeCell.innerHTML = departure.departuretime;
             row.appendChild(depTimeCell);
 
-            if (this.config.fade && this.config.fadePoint < 1) {
-                if (this.config.fadePoint < 0) {
-                    this.config.fadePoint = 0;
-                }
-                var startingPoint = this.config.maximumEntries * this.config.fadePoint;
-                var steps = this.departures.length - startingPoint;
-                if (d >= startingPoint) {
-                    var currentStep = d - startingPoint;
-                    row.style.opacity = 1 - (1 / steps * currentStep);
-                }
-            }
+            // if (this.config.fade && this.config.fadePoint < 1) {
+            //     if (this.config.fadePoint < 0) {
+            //         this.config.fadePoint = 0;
+            //     }
+            //     var startingPoint = this.config.maximumEntries * this.config.fadePoint;
+            //     var steps = this.departures.length - startingPoint;
+            //     if (d >= startingPoint) {
+            //         var currentStep = d - startingPoint;
+            //         row.style.opacity = 1 - (1 / steps * currentStep);
+            //     }
+            // }
 
         }
         return table;
