@@ -105,10 +105,10 @@
             var startTime = moment(new Date());
             var endTime = moment(departure.departuretime, "HH:mm");
             var duration = moment.duration(endTime.diff(startTime));
-            var dep = duration.asMinutes();
-            // var hours = parseInt(duration.asHours());
-            // var minutes = parseInt(duration.asMinutes())%60;
-            // var dep = hours.toString().padStart(2, '0') + ':' + minutes.toString().padStart(2, '0');
+            // var dep = duration.asMinutes();
+            var hours = parseInt(duration.asHours());
+            var minutes = parseInt(duration.asMinutes())%60;
+            var dep = hours + ':' + minutes.toString().padStart(2, '0');
 
             var row = document.createElement("tr");
             table.appendChild(row);
