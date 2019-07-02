@@ -31,6 +31,13 @@ Module.register("MMM-ResRobot",{
 			"U": "fa fa-subway",
 			"F": "fa fa-ship",
 		},
+		type: {
+			"B": "bus",
+			"S"; "tram",
+			"J": "train",
+			"U": "tram",
+			"F": "boat"
+		}
 	},
 
 	// Define required styles.
@@ -111,7 +118,7 @@ Module.register("MMM-ResRobot",{
 			// row.appendChild(depTypeCell);
 
 			var depLineCell = document.createElement("td");
-			depLineCell.className = "lineno";
+			depLineCell.className = "lineno line" + departure.line;
 			depLineCell.innerHTML = departure.line;
 			row.appendChild(depLineCell);
 
