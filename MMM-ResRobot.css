@@ -25,6 +25,7 @@
 .lineno {
 	align: right;
 	width: 12%;
+	padding-right: 12px
 }
 
 .lineno span {
@@ -34,7 +35,6 @@
 	padding: 5px 12px;
 	border-radius: 3px;
 	margin-bottom: 2px;
-	margin-right: 8px;
 	background: rgb(0, 182, 241);
 	color: #fff;
 }
