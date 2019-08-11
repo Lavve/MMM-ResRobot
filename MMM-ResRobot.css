@@ -1,1 +1,115 @@
-.ResRobot{font-size:75%;line-height:65px;display:inline-block;-ms-transform:translate(0, -3px);-webkit-transform:translate(0, -3px);transform:translate(0, -3px)}.departuretime{align:left;padding-left:20px}.departuretype{width:20%;align:right;padding-right:20px}.lineno{align:right;text-align:center;padding:5px 12px;border-radius:3px;margin-bottom:2px}.line5{background:#ef3e42;color:#fff}.line6{color:#00394d;background:#fa8719}.line10{color:#0e629b;background-color:#b4e16e}.line13{color:#00FFFF;background-color:#FDCC99}.line25{background:#00b6f1;color:#fff}.line31{background:#00b6f1;color:#fff}.line35{background:#00b6f1;color:#fff}.line37{background:#00b6f1;color:#fff}.trackno{align:right;padding-right:10px}.destination{align:left}/*# sourceMappingURL=MMM-ResRobot.css.map */
+.ResRobot {
+	font-size: 75%;
+	line-height: 65px;
+	display: inline-block;
+	-ms-transform: translate(0, -3px); /* IE 9 */
+	-webkit-transform: translate(0, -3px); /* Safari */
+	transform: translate(0, -3px);
+}
+
+.ResRobot table {
+	/*width: 400px;*/
+}
+
+.departuretime {
+	align: left;
+	padding-left: 20px;
+}
+
+.departuretype {
+	width: 20%;
+	align: right;
+	padding-right: 20px;
+}
+
+.lineno {
+	align: right;
+	text-align: center;
+	padding: 5px 12px;
+	border-radius: 3px;
+	margin-bottom: 2px;
+	background: rgb(0, 182, 241);
+	color: #fff;
+}
+
+.line1 {
+	background: rgb(255, 255, 255);
+	color: rgb(0, 173, 238);
+}
+.line2 {
+	background: rgb(255, 221, 0);
+	color: rgb(0, 173, 238);
+}
+.line3 {
+	background: rgb(0, 113, 193);
+	color: #fff;
+}
+.line4 {
+	background: rgb(0, 162, 97);
+	color: rgb(255, 255, 255);
+}
+.line5 {
+	background: rgb(239, 62, 66);
+	color: rgb(255, 255, 255);
+}
+.line6 {
+	color: rgb(0, 173, 238);
+	background: rgb(248, 152, 40);
+}
+.line7 {
+	background: rgb(156, 86, 8);
+	color: rgb(255, 255, 255);
+}
+.line8 {
+	background: rgb(165, 68, 154);
+	color: rgb(255, 255, 255);
+}
+.line9 {
+	background: rgb(185, 228, 249);
+	color: rgb(0, 173, 238);
+}
+.line10 {
+	background-color: rgb(200, 223, 143);
+	color: rgb(0, 173, 238);
+}
+.line11 {
+	background: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+}
+
+.line13 {
+	color: #0ff;
+	background-color: rgb(253, 204, 153);
+}
+.line14 {
+	color: rgb(117, 59, 189);
+	background-color: rgb(193, 160, 218);
+}
+/*
+.line25 {
+	background: rgb(0, 182, 241);
+	color: #fff;
+}
+.line31 {
+	background: rgb(0, 182, 241);
+	color: #fff;
+}
+.line35 {
+	background: rgb(0, 182, 241);
+	color: #fff;
+}
+.line37 {
+	background: rgb(0, 182, 241);
+	color: #fff;
+}
+*/
+
+.trackno {
+	/*width: 20%;*/
+	align: right;
+	padding-right: 10px;
+}
+
+.destination {
+	align: left;
+}
