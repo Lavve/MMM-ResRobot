@@ -121,8 +121,10 @@
             // row.appendChild(depTypeCell);
 
             var depLineCell = document.createElement("td");
+            var lineCell = document.createElement('span');
             depLineCell.className = "lineno line" + departure.line;
-            depLineCell.innerHTML = departure.line;
+            lineCell.innerHTML = departure.line;
+            depLineCell.appendChild(lineCell);
             row.appendChild(depLineCell);
 
             var depTimeCell = document.createElement("td");
@@ -130,10 +132,10 @@
             depTimeCell.innerHTML = dep;
             row.appendChild(depTimeCell);
 
-            var depTimeCell = document.createElement("td");
-            depTimeCell.className = "departuretime";
-            depTimeCell.innerHTML = departure.departuretime;
-            row.appendChild(depTimeCell);
+            var depClockCell = document.createElement("td");
+            depClockCell.className = "departuretime";
+            depClockCell.innerHTML = departure.departuretime;
+            row.appendChild(depClockCell);
 
             // if (this.config.fade && this.config.fadePoint < 1) {
             //     if (this.config.fadePoint < 0) {

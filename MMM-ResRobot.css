@@ -24,6 +24,10 @@
 
 .lineno {
 	align: right;
+}
+
+.lineno span {
+	display: inline-block;
 	text-align: center;
 	padding: 5px 12px;
 	border-radius: 3px;
@@ -32,80 +36,61 @@
 	color: #fff;
 }
 
-.line1 {
+.line1 span {
 	background: rgb(255, 255, 255);
 	color: rgb(0, 173, 238);
 }
-.line2 {
+.line2 span {
 	background: rgb(255, 221, 0);
 	color: rgb(0, 173, 238);
 }
-.line3 {
+.line3 span {
 	background: rgb(0, 113, 193);
 	color: #fff;
 }
-.line4 {
+.line4 span {
 	background: rgb(0, 162, 97);
 	color: rgb(255, 255, 255);
 }
-.line5 {
+.line5 span {
 	background: rgb(239, 62, 66);
 	color: rgb(255, 255, 255);
 }
-.line6 {
+.line6 span {
 	color: rgb(0, 173, 238);
 	background: rgb(248, 152, 40);
 }
-.line7 {
+.line7 span {
 	background: rgb(156, 86, 8);
 	color: rgb(255, 255, 255);
 }
-.line8 {
+.line8 span {
 	background: rgb(165, 68, 154);
 	color: rgb(255, 255, 255);
 }
-.line9 {
+.line9 span {
 	background: rgb(185, 228, 249);
 	color: rgb(0, 173, 238);
 }
-.line10 {
+.line10 span {
 	background-color: rgb(200, 223, 143);
 	color: rgb(0, 173, 238);
 }
-.line11 {
+.line11 span {
 	background: rgb(0, 0, 0);
 	color: rgb(255, 255, 255);
 }
 
-.line13 {
+.line13 span {
 	color: #0ff;
 	background-color: rgb(253, 204, 153);
 }
-.line14 {
+.line14 span {
 	color: rgb(117, 59, 189);
 	background-color: rgb(193, 160, 218);
 }
-/*
-.line25 {
-	background: rgb(0, 182, 241);
-	color: #fff;
-}
-.line31 {
-	background: rgb(0, 182, 241);
-	color: #fff;
-}
-.line35 {
-	background: rgb(0, 182, 241);
-	color: #fff;
-}
-.line37 {
-	background: rgb(0, 182, 241);
-	color: #fff;
-}
-*/
 
 .trackno {
-	/*width: 20%;*/
 	align: right;
 	padding-right: 10px;
 }
