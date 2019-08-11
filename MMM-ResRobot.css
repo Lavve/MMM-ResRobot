@@ -24,6 +24,7 @@
 
 .lineno {
 	align: right;
+	width: 20%;
 }
 
 .lineno span {
